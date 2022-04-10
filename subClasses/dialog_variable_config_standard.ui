@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_ConfigVariableStandard</class>
+ <widget class="QDialog" name="Dialog_ConfigVariableStandard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>463</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>240</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit timeframe:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_timeframe">
+   <property name="geometry">
+    <rect>
+     <x>148</x>
+     <y>10</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>sec</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>min</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>hour</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>day</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>month</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>tick</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_timeframe">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit color:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit style:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Style">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>69</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>solid</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>dash</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>dot</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>dash-dot</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="widget_PreviewGraph" native="true">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>63</y>
+     <width>221</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>201</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit dock:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit width:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_selectDock">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>201</y>
+     <width>69</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>main</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>osci</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_createDock">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>200</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>create new dock</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_defaultParams">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>10</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_showPreview">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>40</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Show preview</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_getColorButton" native="true">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>66</y>
+     <width>69</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_width">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog_ConfigVariableStandard</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog_ConfigVariableStandard</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
